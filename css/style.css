@@ -69,14 +69,14 @@ body {
 .main-view {
     flex: 0 1 calc(100% - 50px);
     height: calc(100vh - 100px);
-    padding-top: 80px;
+    padding-top: 100px;
     overflow-y: scroll;
 }
 
 .main-header {
-    height: 80px;
-    background-color: black;
-    opacity: 0.4;
+    height: 100px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     right: 0;
@@ -96,6 +96,10 @@ img {
 
 ul {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Main nav */
@@ -138,7 +142,17 @@ img.circle {
 /* Main Header */
 
 .main-header {
-    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-header .btn {
+    color: white;
+    font-size: 15px;
+    padding: 10px 30px;
+    border: 1px solid currentColor;
+    border-radius: 20px;
 }
 
 /* Footer */
@@ -173,7 +187,7 @@ img.circle {
 
 .main-view::-webkit-scrollbar-track-piece:start {
     background: transparent;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 
