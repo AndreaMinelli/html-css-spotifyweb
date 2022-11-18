@@ -4,3 +4,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Utils */
+
+.flex {
+    display: flex;
+}
+
+/* General */
+
+body {
+    background-color: rgb(20, 25, 34);
+}
+
+.main-nav {
+    flex-basis: 50px;
+    height: calc(100vh - 100px);
+    background-color: black;
+}
+
+.main-view {
+    flex: 0 1 100%;
+}
+
+.main-header {
+    height: 80px;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.main-playlist {
+    height: calc(100vh - 180px);
+    overflow-y: scroll;
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(40, 40, 40);
+}
