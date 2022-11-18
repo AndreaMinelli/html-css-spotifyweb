@@ -11,16 +11,34 @@
     display: flex;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: 50%;
+    background-color: white;
+    border: 1px solid red;
+}
+
+/*! Visualizzazione XS */
+
 /* General */
 
 body {
     background-color: rgb(20, 25, 34);
+    color: white;
 }
 
 .main-nav {
-    flex-basis: 50px;
+    flex: 0 0 50px;
     height: calc(100vh - 100px);
     background-color: black;
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main-view {
@@ -43,8 +61,30 @@ footer {
     background-color: rgb(40, 40, 40);
 }
 
+/* Main nav */
 
-/* Visualizzazione S */
+.top-nav {
+    flex: 0 1 100%;
+}
+
+.bottom-nav {
+    flex: 1 1 5%;
+}
+
+/* Main View */
+
+/* Main Header */
+
+.main-header {
+    text-align: end;
+}
+
+/* Main playlist */
+
+
+
+
+/*! Visualizzazione S */
 
 @media screen and (min-width:576px) {
     .main-nav {
