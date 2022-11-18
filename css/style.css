@@ -30,6 +30,15 @@
     margin-bottom: 20px;
 }
 
+.info {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.tablet {
+    display: none;
+}
+
 .brd {
     border: 1px solid red;
 }
@@ -43,14 +52,15 @@
 body {
     background-color: rgb(20, 25, 34);
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .main-nav {
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
     flex: 0 0 50px;
     padding: 5px 10px;
     background-color: black;
-    color: lightgray;
+    color: rgb(113, 113, 113);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -100,12 +110,16 @@ ul {
     flex: 0 1 100%;
 }
 
-.bottom-nav {
-    flex: 0 1 5%;
+.info-tablet {
+    display: none;
 }
 
-.main-nav picture {
-    margin: 10px auto;
+.main-nav-playlist {
+    display: none;
+}
+
+.bottom-nav {
+    flex: 0 1 5%;
 }
 
 img.small {
@@ -185,6 +199,10 @@ img.circle {
         flex-basis: calc(100% -180px);
     }
 
+    .info-tablet {
+        display: inline-block;
+    }
+
     /* Main Nav */
     #logo-small {
         display: none;
@@ -194,6 +212,38 @@ img.circle {
         width: 90%;
         display: block;
     }
+
+    .main-nav li {
+        height: 20px;
+        display: flex;
+    }
+
+    .main-nav li .info {
+        margin-left: 5px;
+        align-self: center;
+    }
+
+    /* Main nav PLAYLIST */
+
+    .main-nav-playlist {
+        display: block;
+    }
+
+    .main-nav-playlist h4 {
+        color: white;
+        margin: 35px 0 10px;
+    }
+
+    .new-playlist {
+        display: flex;
+        align-items: center;
+    }
+
+    .new-playlist h4 {
+        color: rgb(113, 113, 113);
+        margin: 0 5px;
+    }
+
 }
 
 
