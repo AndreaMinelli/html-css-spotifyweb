@@ -42,3 +42,12 @@ footer {
     height: 100px;
     background-color: rgb(40, 40, 40);
 }
+
+
+/* Visualizzazione S */
+
+@media screen and (min-width:576px) {
+    .main-nav {
+        flex-basis: 180px;
+    }
+}
