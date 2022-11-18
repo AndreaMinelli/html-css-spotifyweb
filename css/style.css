@@ -14,12 +14,12 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -5px;
 }
 
 .col {
     flex-basis: 50%;
-    background-color: white;
-    border: 1px solid red;
+    padding: 0 5px;
 }
 
 .mg-bottom-10 {
@@ -30,9 +30,18 @@
     margin-bottom: 20px;
 }
 
+.mg-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .info {
     font-weight: bold;
     font-size: 14px;
+    color: rgb(113, 113, 113);
 }
 
 .font-white {
@@ -87,6 +96,10 @@ footer {
     height: 100px;
     background-color: rgb(40, 40, 40);
     display: flex;
+}
+
+h1 {
+    margin: 30px 0 20px;
 }
 
 img {
@@ -186,6 +199,10 @@ img.circle {
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* Section Recently Played */
+
+
 
 
 
