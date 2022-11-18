@@ -91,3 +91,12 @@ footer {
         flex-basis: 180px;
     }
 }
+
+
+/* ! Visualizzazione MD */
+
+@media screen and (min-width: 768px) {
+    .col {
+        flex-basis: 25%;
+    }
+}
