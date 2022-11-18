@@ -35,10 +35,6 @@
     font-size: 14px;
 }
 
-.tablet {
-    display: none;
-}
-
 .brd {
     border: 1px solid red;
 }
@@ -136,11 +132,6 @@ img.circle {
     background-color: rgb(128, 128, 128);
 }
 
-.bottom-nav .small {
-    margin-bottom: 20px;
-}
-
-
 /* Main View */
 /* Main Header */
 
@@ -214,8 +205,11 @@ img.circle {
     }
 
     .main-nav li {
-        height: 20px;
         display: flex;
+    }
+
+    .main-nav li img {
+        height: 25px;
     }
 
     .main-nav li .info {
@@ -242,6 +236,22 @@ img.circle {
     .new-playlist h4 {
         color: rgb(113, 113, 113);
         margin: 0 5px;
+    }
+
+    /* Bottom nav */
+
+    .bottom-nav img {
+        margin: 0;
+    }
+
+    .bottom-nav .small {
+        width: 15px;
+    }
+
+    .bottom-nav li:first-child {
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid currentColor;
     }
 
 }
