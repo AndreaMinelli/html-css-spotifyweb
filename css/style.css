@@ -22,6 +22,10 @@
     border: 1px solid red;
 }
 
+.brd {
+    border: 1px solid red;
+}
+
 /*! Visualizzazione XS */
 
 /* General */
@@ -59,6 +63,7 @@ body {
 footer {
     height: 100px;
     background-color: rgb(40, 40, 40);
+    display: flex;
 }
 
 /* Main nav */
@@ -81,6 +86,19 @@ footer {
 
 /* Main playlist */
 
+/* Footer */
+
+.album {
+    flex: 0 0 30%;
+}
+
+.player {
+    flex: 0 1 40%;
+}
+
+.general-command {
+    flex: 0 0 30%;
+}
 
 
 
