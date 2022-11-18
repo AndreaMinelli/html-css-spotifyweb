@@ -26,6 +26,8 @@
     border: 1px solid red;
 }
 
+
+
 /*! Visualizzazione XS */
 
 /* General */
@@ -47,17 +49,19 @@ body {
 
 .main-view {
     flex: 0 1 100%;
+    height: calc(100vh - 100px);
+    padding-top: 80px;
+    overflow-y: scroll;
 }
 
 .main-header {
     height: 80px;
     background-color: black;
-    opacity: 0.3;
-}
-
-.main-playlist {
-    height: calc(100vh - 180px);
-    overflow-y: scroll;
+    opacity: 0.4;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 footer {
@@ -78,13 +82,13 @@ footer {
 
 /* Main View */
 
+/* Main playlist */
+
 /* Main Header */
 
 .main-header {
     text-align: end;
 }
-
-/* Main playlist */
 
 /* Footer */
 
@@ -98,6 +102,27 @@ footer {
 
 .general-command {
     flex: 0 0 30%;
+}
+
+/* Scrollbar */
+
+.main-view::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+}
+
+.main-view::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.main-view::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+}
+
+.main-view::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 80px;
 }
 
 
