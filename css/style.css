@@ -96,13 +96,14 @@ body {
 
 .main-header {
     height: 100px;
-    padding: 15px;
+    padding: 15px 20px;
     background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
     left: 0;
+    justify-content: flex-end;
 }
 
 footer {
@@ -170,18 +171,16 @@ img.circle {
 /* Main View */
 /* Main Header */
 
-.main-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 .main-header .btn {
     color: white;
     font-size: 15px;
     padding: 10px 30px;
     border: 1px solid currentColor;
     border-radius: 20px;
+}
+
+.main-header a:hover {
+    transform: scale(1.1);
 }
 
 /* Playlist nav */
