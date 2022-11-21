@@ -63,7 +63,7 @@ body {
 }
 
 .main-nav {
-    min-height: calc(100vh - 100px);
+    height: calc(100vh - 100px);
     flex: 0 0 50px;
     padding: 5px 10px;
     background-color: black;
@@ -71,12 +71,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
     z-index: 1;
 }
 
 .main-view {
-    flex: 0 1 calc(100% - 50px);
+    flex: 0 1 auto;
     height: calc(100vh - 100px);
     padding: 120px 20px 20px;
     overflow-y: scroll;
@@ -122,7 +121,7 @@ a {
 }
 
 .top-nav {
-    flex: 0 1 100%;
+    flex: 0 1 auto;
 }
 
 .info-tablet {
@@ -200,7 +199,12 @@ img.circle {
     transform: translateX(-50%);
 }
 
-/* Section Recently Played */
+/* Section Most Popular */
+
+#most-popular figure {
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 
 
