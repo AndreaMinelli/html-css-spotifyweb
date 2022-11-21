@@ -303,8 +303,9 @@ img.circle {
     flex: 0 1 40%;
 }
 
-.player-command * {
+.player-command i {
     margin: 0 10px;
+    cursor: pointer;
 }
 
 .player-command .fa-circle-play {
@@ -327,13 +328,39 @@ img.circle {
     flex: 1 0 auto;
     height: 5px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .reproduction .reproduction-progress {
     background-color: rgb(193, 193, 193);
-    width: 30px;
+    width: 30%;
     height: 100%;
     border-radius: 5px;
+    position: relative;
+}
+
+.bar-thumb {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, calc(-100% / 3));
+    display: none;
+}
+
+.player-command .fa-circle-play:hover {
+    transform: scale(1.1);
+}
+
+.player-time .reproduction:hover .reproduction-progress {
+    background-color: rgb(173, 255, 47);
+}
+
+.player-time .reproduction:hover .bar-thumb {
+    display: block;
 }
 
 /* Footer left General Command */
