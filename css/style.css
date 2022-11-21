@@ -11,6 +11,10 @@
     display: flex;
 }
 
+.flex.align-center {
+    align-items: center;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -242,9 +246,62 @@ img.circle {
     margin-bottom: 5px;
 }
 
+/* Footer center Player */
+
 .player {
     flex: 0 1 40%;
 }
+
+.player-command {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-command * {
+    margin: 0 10px;
+}
+
+.player-command .fa-circle-play {
+    margin: 0 15px;
+}
+
+.player-time {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.player-time .time {
+    font-size: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.player-time .reproduction {
+    background-color: rgb(90, 90, 90);
+    flex: 1 0 auto;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.reproduction .reproduction-progress {
+    background-color: rgb(193, 193, 193);
+    width: 30px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .general-command {
     flex: 0 0 30%;
