@@ -275,6 +275,7 @@ img.circle {
 .album figure {
     max-width: 40px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .album-info {
@@ -283,6 +284,17 @@ img.circle {
 
 .album-info h5 {
     margin-bottom: 5px;
+}
+
+.album-info .info:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+.album-command .fa-regular:hover {
+    cursor: pointer;
+    color: white;
 }
 
 /* Footer center Player */
