@@ -94,6 +94,7 @@ body {
 
 footer {
     height: 100px;
+    padding: 20px 10px;
     background-color: rgb(40, 40, 40);
     display: flex;
 }
@@ -146,8 +147,8 @@ img.small {
 
 img.circle {
     margin: 0 auto;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     overflow: hidden;
     background-color: rgb(128, 128, 128);
@@ -209,15 +210,36 @@ img.circle {
     overflow: hidden;
 }
 
-
-
-
-
-
 /* Footer */
+
+/* Footer left Album */
 
 .album {
     flex: 0 0 30%;
+    display: flex;
+    align-items: center;
+}
+
+.album-command {
+    text-align: center;
+}
+
+.album-command .fa-regular {
+    color: rgb(113, 113, 113);
+    margin: 0 5px;
+}
+
+.album figure {
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+.album-info {
+    line-height: 0.8rem;
+}
+
+.album-info h5 {
+    margin-bottom: 5px;
 }
 
 .player {
@@ -360,6 +382,13 @@ img.circle {
     .col {
         flex-basis: 25%;
     }
+
+    /* Footer */
+    /* Footer left Album */
+
+    .album-command {
+        margin: 0 auto;
+    }
 }
 
 
@@ -368,5 +397,12 @@ img.circle {
 @media screen and (min-width: 992px) {
     .col {
         flex-basis: calc(100% / 6);
+    }
+
+    /* Footer */
+    /* Footer left Album */
+
+    .album-command {
+        margin: 0 20px;
     }
 }
