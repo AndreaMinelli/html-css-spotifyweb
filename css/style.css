@@ -197,6 +197,11 @@ img.circle {
     font-size: 12px;
     margin: 0px 10px 20px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.playlist-nav li:hover {
+    color: white;
 }
 
 /* Active */
