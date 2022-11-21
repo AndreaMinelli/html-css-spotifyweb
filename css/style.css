@@ -371,6 +371,7 @@ img.circle {
 
 .general-command .fa-solid {
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .general-command .sound {
@@ -378,13 +379,23 @@ img.circle {
     flex: 1 0 auto;
     height: 5px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .sound .sound-level {
     background-color: rgb(193, 193, 193);
-    width: 30px;
+    width: 30%;
     height: 100%;
     border-radius: 5px;
+    position: relative;
+}
+
+.general-command .sound:hover .sound-level {
+    background-color: rgb(173, 255, 47);
+}
+
+.general-command .sound:hover .bar-thumb {
+    display: block;
 }
 
 /* Main View Scrollbar */
