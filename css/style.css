@@ -250,7 +250,7 @@ img.circle {
     flex: 0 0 30%;
 }
 
-/* Scrollbar */
+/* Main View Scrollbar */
 
 .main-view::-webkit-scrollbar {
     display: block;
@@ -269,6 +269,18 @@ img.circle {
 .main-view::-webkit-scrollbar-track-piece:start {
     background: transparent;
     margin-top: 100px;
+}
+
+/* Main Playlist Scrollbar */
+
+.new-playlist-name::-webkit-scrollbar {
+    display: block;
+    width: 4px;
+}
+
+.new-playlist-name::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 10px;
 }
 
 
