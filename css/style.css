@@ -40,7 +40,7 @@
 
 .info {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     color: rgb(113, 113, 113);
 }
 
@@ -71,6 +71,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     z-index: 1;
 }
 
@@ -121,7 +122,9 @@ a {
 }
 
 .top-nav {
-    flex: 0 1 auto;
+    flex: 1 1 50%;
+    width: 20px;
+    overflow: hidden;
 }
 
 .info-tablet {
@@ -256,10 +259,7 @@ img.circle {
     .main-nav {
         flex-basis: 180px;
         padding: 15px;
-    }
-
-    .main-view {
-        flex-basis: calc(100% -180px);
+        align-items: stretch;
     }
 
     .info-tablet {
@@ -272,8 +272,12 @@ img.circle {
     }
 
     #logo {
-        width: 90%;
+        width: 70%;
         display: block;
+    }
+
+    .top-nav {
+        width: 100%;
     }
 
     .main-nav li {
@@ -281,7 +285,7 @@ img.circle {
     }
 
     .main-nav li img {
-        height: 25px;
+        height: 20px;
     }
 
     .main-nav li .info {
@@ -308,10 +312,11 @@ img.circle {
 
     .main-nav-playlist {
         display: block;
+        height: 60%;
     }
 
-    .main-nav-playlist h4 {
-        margin: 35px 0 10px;
+    .main-nav-playlist h5 {
+        margin: 20px 0 10px;
     }
 
     .new-playlist {
@@ -319,7 +324,13 @@ img.circle {
         align-items: center;
     }
 
-    .new-playlist h4 {
+    .new-playlist-name {
+        max-height: 60%;
+        overflow: auto;
+
+    }
+
+    .new-playlist h5 {
         color: rgb(113, 113, 113);
         margin: 0 5px;
     }
