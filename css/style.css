@@ -54,6 +54,10 @@
     color: rgb(113, 113, 113);
 }
 
+.active-list .active {
+    border-color: rgb(173, 255, 47);
+}
+
 /* Import FontAwesome Icon */
 
 .icon::before {
@@ -217,10 +221,6 @@ img.circle {
     transform: translateX(-50%);
 }
 
-.active-list .active {
-    border-color: rgb(173, 255, 47);
-}
-
 /* Hoover effect Immagini Playlist */
 
 .row figure {
@@ -256,6 +256,33 @@ img.circle {
 }
 
 /* Footer */
+
+footer .bar {
+    background-color: rgb(90, 90, 90);
+    flex: 1 0 auto;
+    height: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bar .bar-progress {
+    background-color: rgb(193, 193, 193);
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.bar-thumb {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, calc(-100% / 3));
+    display: none;
+}
 
 /* Footer left Album */
 
@@ -325,44 +352,14 @@ img.circle {
     font-weight: bold;
 }
 
-.player-time .reproduction {
-    background-color: rgb(90, 90, 90);
-    flex: 1 0 auto;
-    height: 5px;
-    border-radius: 5px;
-    cursor: pointer;
+.player-time .bar-progress {
+    width: 30px;
 }
 
-.reproduction .reproduction-progress {
-    background-color: rgb(193, 193, 193);
-    width: 30%;
-    height: 100%;
-    border-radius: 5px;
-    position: relative;
-}
-
-.bar-thumb {
-    height: 15px;
-    width: 15px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(50%, calc(-100% / 3));
-    display: none;
-}
+/* Hover su paly */
 
 .player-command .fa-circle-play:hover {
     transform: scale(1.1);
-}
-
-.player-time .reproduction:hover .reproduction-progress {
-    background-color: rgb(173, 255, 47);
-}
-
-.player-time .reproduction:hover .bar-thumb {
-    display: block;
 }
 
 /* Footer left General Command */
@@ -376,27 +373,17 @@ img.circle {
     cursor: pointer;
 }
 
-.general-command .sound {
-    background-color: rgb(90, 90, 90);
-    flex: 1 0 auto;
-    height: 5px;
-    border-radius: 5px;
-    cursor: pointer;
+.general-command .bar-progress {
+    width: 40%;
 }
 
-.sound .sound-level {
-    background-color: rgb(193, 193, 193);
-    width: 30%;
-    height: 100%;
-    border-radius: 5px;
-    position: relative;
-}
+/* Effetto hoover su bar */
 
-.general-command .sound:hover .sound-level {
+.bar:hover .bar-progress {
     background-color: rgb(173, 255, 47);
 }
 
-.general-command .sound:hover .bar-thumb {
+.bar:hover .bar-thumb {
     display: block;
 }
 
