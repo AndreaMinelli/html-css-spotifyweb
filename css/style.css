@@ -204,6 +204,23 @@ img.circle {
     cursor: pointer;
 }
 
+.playlist-nav li:first-child {
+    position: relative;
+}
+
+.active-bar {
+    position: absolute;
+    border: 1px solid transparent;
+    width: 25px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.active-list .active {
+    border-color: rgb(173, 255, 47);
+}
+
 /* Hoover effect Immagini Playlist */
 
 .row figure {
@@ -432,21 +449,6 @@ img.circle {
         display: inline-block;
     }
 
-    /* Active */
-
-    .active-bar {
-        position: absolute;
-        border: 1px solid transparent;
-        width: 25px;
-        bottom: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .active-list .active {
-        border-color: rgb(173, 255, 47);
-    }
-
     /* Sidebar */
     #logo-small {
         display: none;
@@ -523,12 +525,6 @@ img.circle {
         padding-bottom: 10px;
         margin-bottom: 15px;
         border-bottom: 1px solid rgb(113, 113, 113);
-    }
-
-    /* Main view Nav */
-
-    .playlist-nav li:first-child {
-        position: relative;
     }
 
 }
