@@ -391,7 +391,7 @@ footer .bar {
 
 .main-view::-webkit-scrollbar {
     display: block;
-    width: 10px;
+    width: 5px;
 }
 
 .main-view::-webkit-scrollbar-thumb {
@@ -412,7 +412,7 @@ footer .bar {
 
 .new-playlist-name::-webkit-scrollbar {
     display: block;
-    width: 4px;
+    width: 2px;
 }
 
 .new-playlist-name::-webkit-scrollbar-thumb {
